@@ -1,0 +1,12 @@
+package com.entity;
+
+public class Animal {
+	 int i;
+		String s;
+		public static void main(String[] args)
+		{
+		  Animal t=new Animal();	//hidden -->default constructor created by compiler
+		  System.out.println(t.i+" "+t.s);
+		}
+
+}

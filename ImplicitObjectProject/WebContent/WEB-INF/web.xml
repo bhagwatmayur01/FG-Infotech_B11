@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app>  
+  
+<servlet>  
+<servlet-name>s1</servlet-name>  
+<jsp-file>/ApplicationImpl.jsp</jsp-file>  
+   </servlet> 
+ 
+  <servlet-mapping>
+ <servlet-name>s1</servlet-name>
+ <url-pattern>/applicationObj</url-pattern>
+ </servlet-mapping>
+  
+  
+<context-param>  
+<param-name>dname</param-name>  
+<param-value>sun.jdbc.odbc.jdbcOdbDriver</param-value>  
+</context-param>  
+
+
+</web-app>

@@ -1,0 +1,27 @@
+package com.threadDemo;
+
+import java.util.Scanner;
+
+public class FabbonacySeries {
+
+	public static void main(String[] args) {
+	
+		//Scanner s=new Scanner();
+		
+		int n=19;
+		
+		if(n>0) {
+			System.out.println("Number is Positive");
+		}
+		
+		else if(n<0)
+		{
+			System.out.println("Number is ngative");
+		}
+		else
+		{
+			System.out.println("Number is zero");
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.entity;
+
+public class Animal {
+	   String name;
+	   int emp_id;
+	   public static void main(String[] args)
+	   {
+	      Animal e1=new Animal();
+	      Animal e2=new Animal();
+		  System.out.println("Employee 1 : "+e1.name+" "e1.emp_id);
+		  System.out.println("Employee 2 : "+e2.name+" "e2.emp_id);	  
+	   }
+
+}

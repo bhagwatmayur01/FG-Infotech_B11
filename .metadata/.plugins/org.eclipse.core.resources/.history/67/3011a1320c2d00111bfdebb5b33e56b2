@@ -1,0 +1,22 @@
+package com.threadDemo;
+
+import java.util.Scanner;
+
+import org.hibernate.Length;
+
+public class FabbonacySeries {
+
+	public static void main(String[] args) {
+	
+		//Scanner s=new Scanner();
+		
+		String str="Mayur";
+		String rev="";
+		
+		for(int i=0;i>=str.length()-1;i--) {
+			rev=rev+str.charAt(i);
+		}
+		System.out.println(rev);
+	}
+
+}

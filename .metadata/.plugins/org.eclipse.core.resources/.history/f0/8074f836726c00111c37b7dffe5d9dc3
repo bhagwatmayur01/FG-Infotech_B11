@@ -1,0 +1,14 @@
+package Java;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+
+		String name="a Programming Language.";
+		String nameNew=name.substring(1,8);
+		System.out.println(nameNew);
+
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.entity;
+
+public class Animal {
+	Animal m1()  
+	{
+	    return this;
+	}
+    public static void main(String []args)
+	{
+    	Animal t=new Animal();
+	   t.m1();
+	}
+
+}

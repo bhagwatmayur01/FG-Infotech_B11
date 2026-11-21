@@ -1,0 +1,32 @@
+package com.collection;
+
+import java.util.*;
+
+public class LinkedListDemo {
+
+	public static void main(String[] args) {
+		LinkedList<String> list = new LinkedList<String>();
+		list.add("Mayur");
+		list.add("Vikas");
+		list.add("Rajesh");
+		list.add(null);
+		list.add("Vikas");
+		list.add(null);
+		list.add("200");
+		list.add("Mahesh");
+		System.out.println("LinkedList Data is a: " + list);
+
+		list.addFirst("Nitin");
+		list.addLast("Smita");
+		System.out.println("After Adding the First and Last elements are : " + list);
+
+		System.out.println("getFirst method data is a: " + list.getFirst());
+		System.out.println("getLast method data is a : " + list.getLast());
+
+		System.out.println("Using removeFirst Method data is a: " + list.removeFirst());
+		System.out.println("Using removeLast Method data is a :" + list.removeLast());
+		System.out.println("Last List Data is a: " + list);
+
+	}
+
+}

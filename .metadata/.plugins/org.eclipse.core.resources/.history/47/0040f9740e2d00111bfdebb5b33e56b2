@@ -1,0 +1,21 @@
+package com.threadDemo;
+
+import java.util.Scanner;
+
+import org.hibernate.Length;
+
+public class FabbonacySeries {
+
+	public static void main(String[] args) {
+	
+		//Scanner s=new Scanner();
+		
+		int n=5;
+		
+		for(int i=1;i<=10;i++) {
+			System.out.println(i*n);
+			
+		}
+        
+	}
+}

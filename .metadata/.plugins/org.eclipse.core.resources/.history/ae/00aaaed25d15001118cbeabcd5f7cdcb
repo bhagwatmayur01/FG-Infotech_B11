@@ -1,0 +1,45 @@
+package com.collection;
+
+import java.util.*;
+
+
+public class CollectionMethods {
+
+	public static void main(String[] args) {
+		
+		List<Integer> a=new ArrayList<Integer>();
+        a.add(10);
+        a.add(20);
+        a.add(30);
+        
+        List<Integer> a2=new ArrayList<Integer>();
+        a2.add(10);
+        a2.add(20);
+        a2.add(30);
+        
+        System.out.println("Contains?"+a.containsAll(a2));;
+        a.addAll(a2);
+        System.out.println("List a afetr addAll"+a);
+        //a.removeAll(a2);
+        //System.out.println("RemoveAll"+a);
+        Iterator i=a.iterator();
+        
+        while(i.hasNext()) {
+        	System.out.println("after Iterator"+i.next());
+        }
+        
+        
+        System.out.println("Before removing"+a.size());
+       for(Integer b:a) {
+    	   System.out.println(b);
+       }
+       
+       a.remove(1);
+       System.out.println("after removing "+a.size());
+       for(Integer c:a) {
+    	   System.out.println(c);
+       }
+       
+	}
+
+}

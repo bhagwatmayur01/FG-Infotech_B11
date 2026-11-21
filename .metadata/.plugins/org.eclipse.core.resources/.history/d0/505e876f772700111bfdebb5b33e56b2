@@ -1,0 +1,17 @@
+package com.threadDemo;
+
+public class FabbonacySeries {
+
+	public static void main(String[] args) {
+		
+		int[] arr= {10,25,5,40,15};
+		int min = arr[0]; //asume first element is minimum
+		for(int i=1;i<arr.length;i++) {
+			if(arr[i]<min) {
+				min=arr[i]; //update max
+			}
+		}
+		System.out.println("Maximum number: "+ min);
+	}
+
+}

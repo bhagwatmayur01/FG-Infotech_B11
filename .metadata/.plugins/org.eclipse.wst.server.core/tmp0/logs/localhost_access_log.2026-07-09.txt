@@ -1,0 +1,10 @@
+127.0.0.1 - - [09/Jul/2026:18:24:11 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:24:16 +0530] "GET /JSP-Project1July2026/index.jsp HTTP/1.1" 200 130
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:25:19 +0530] "GET /JSP-Project1July2026/index.jsp HTTP/1.1" 200 130
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:25:31 +0530] "GET /JSP-Project1July2026/index.jsp HTTP/1.1" 200 155
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:35:33 +0530] "GET /JSP-Project1July2026/index.jsp HTTP/1.1" 200 187
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:35:35 +0530] "GET /JSP-Project1July2026/JSPDemo.jsp HTTP/1.1" 200 300
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:35:39 +0530] "GET /JSP-Project1July2026/first.jsp?username=Mayur HTTP/1.1" 200 139
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:37:31 +0530] "GET /JSP-Project1July2026/index.jsp HTTP/1.1" 200 205
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:37:35 +0530] "GET /JSP-Project1July2026/JSPDemo.jsp HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [09/Jul/2026:18:37:42 +0530] "GET /JSP-Project1July2026/first.jsp?username=Mayur HTTP/1.1" 200 151

@@ -1,0 +1,14 @@
+127.0.0.1 - - [06/Jul/2026:21:46:13 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:21:46:14 +0530] "GET /Servlet-Communication/SendRedirectExample.html HTTP/1.1" 200 329
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:21:46:14 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:21:49:54 +0530] "GET /Servlet-Communication/sendRedirectExample?Web=https%3A%2F%2Fgoogle.com HTTP/1.1" 302 -
+127.0.0.1 - - [06/Jul/2026:21:54:09 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:21:54:09 +0530] "GET /Servlet-Communication/SendRedirectExample.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:21:54:31 +0530] "GET /Servlet-Communication/sendRedirectExample?Web=google.com HTTP/1.1" 302 -
+127.0.0.1 - - [06/Jul/2026:22:42:30 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:22:42:30 +0530] "GET /Servlet_Session_Tracking/input.html HTTP/1.1" 200 610
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:22:43:53 +0530] "GET /Servlet_Session_Tracking/input.html HTTP/1.1" 200 620
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:22:44:17 +0530] "GET /Servlet_Session_Tracking/sessionTrackingExample?firstname=Mayur&lastname=Bhagwat HTTP/1.1" 500 3414
+127.0.0.1 - - [06/Jul/2026:22:46:40 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:22:46:40 +0530] "GET /Servlet_Session_Tracking/input.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:22:46:44 +0530] "GET /Servlet_Session_Tracking/sessionTrackingExample?firstname=Mayur&lastname=Bhagwat HTTP/1.1" 500 3414

@@ -1,0 +1,23 @@
+package Java;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+
+		String s1="Welcome";
+		String s2=s1.intern();
+		String s3=new String("Welcome");
+		System.out.println(s3);
+		//String s2=new String("Welcome");
+		//s2=s2.intern();
+
+		System.out.println(s1==s3);  //
+
+
+
+
+
+
+	}
+
+}

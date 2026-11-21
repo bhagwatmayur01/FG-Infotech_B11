@@ -1,0 +1,17 @@
+package com.threadDemo;
+
+class Demo extends Thread{
+ 
+	public  void run() {
+		System.out.println("Run method started");
+	}
+}
+public class Demo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Demo d=new Demo();
+		d.start();
+	}
+
+}

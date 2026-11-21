@@ -1,0 +1,82 @@
+package com.fg.Student;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class UpdateDetailsServlet extends HttpServlet {
+
+	@Override
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		String ids=request.getParameter("id");
+		int id=Integer.parseInt(ids);
+		System.out.println("Id is a: "+id);
+		String name=request.getParameter("name");
+		String city=request.getParameter("city");
+		String qualification=request.getParameter("qualification");
+		String ages=request.getParameter("age");
+		int age=Integer.parseInt(ages);
+		
+		boolean found=false;
+		System.out.println("Id is a: "+id);
+		for(AddStudent s:StudentInfoStore.list) {
+			
+			if(s.getId()==id) {
+				out.println("<html><body>");
+				out.println("<form action='update' method='post'>");
+				out.println("ID:");
+				out.println("<input type='hidden' name='id' value='"+s.getId()+"'>");
+				out.println("Name:");
+				out.println("<input type='text' name='name' value='"+s.getName()+"'>");
+				out.println("City:");
+				out.println("<input type='text' name='city' value='"+s.getCity()+"'>");
+				out.println("Qualification:");
+				out.println("<input type='text' name='qualification' value='"+s.getQualification()+"'>");
+				out.println("Age:");
+				out.println("<input type='text' name='age' value='"+s.getAge()+"'>");
+				out.println("</form>");
+				out.println("</body></html>");
+				s.setName(name);
+				s.setCity(city);
+				s.setQualification(qualification);
+				s.setAge(age);
+				found=true;
+				break;
+			}
+		}
+		
+		if(found) {	
+			out.println("<h2>Student Updated Successfully.</h2>");
+		}else {
+			out.println("<h2>Student Not Found.</h2>");
+		}
+		
+		//out.println("<a href='viewStudent'>View Student Details</a>");
+	}
+	
+	@Override
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		String ids=request.getParameter("id");
+		int id=Integer.parseInt(ids);
+		String name=request.getParameter("name");
+		String city=request.getParameter("city");
+		String qualification=request.getParameter("qualification");
+		String ages=request.getParameter("age");
+		int age=Integer.parseInt(ages);
+		
+		
+	
+		
+	}
+	
+}

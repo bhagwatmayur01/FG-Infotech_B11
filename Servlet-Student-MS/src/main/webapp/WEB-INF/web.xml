@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlet-Student-MS</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>AddStudentServlet</servlet-name>
+  <servlet-class>com.fg.Student.AddStudentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>AddStudentServlet</servlet-name>
+  <url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ViewStudentServlet</servlet-name>
+  <servlet-class>com.fg.Student.ViewStudentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ViewStudentServlet</servlet-name>
+  <url-pattern>/viewStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>UpdateDetailsServlet</servlet-name>
+  <servlet-class>com.fg.Student.UpdateDetailsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>UpdateDetailsServlet</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>DeleteStudentServlet</servlet-name>
+  <servlet-class>com.fg.Student.DeleteStudentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>DeleteStudentServlet</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+</web-app>

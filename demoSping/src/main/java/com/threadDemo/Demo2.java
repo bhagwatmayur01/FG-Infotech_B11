@@ -1,0 +1,27 @@
+package com.threadDemo;
+
+class Human {
+	void speak() {
+		System.out.println("Human can speak.");
+	}
+}
+
+class Person  extends Human implements Runnable {
+	@Override
+	public void run() {
+		System.out.println("Person is running..");
+	}
+}
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p1= new Person();
+		p1.speak();
+		Thread t1= new Thread(p1);
+		t1.start();
+
+	}
+
+}

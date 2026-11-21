@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP</title>
+</head>
+<body>
+  index.jsp Page <br/>
+<h1>Welcome</h1>
+<p>This is JSP page</p><br/>
+<p>JSP Expression tag:-</p><br/>
+<%=5+3 %><br/> 
+<%= java.util.Calendar.getInstance().getTime() %>
+<p>JSP Declaration Tag expression Tag:-</p>  <br/>           
+<a href="JSPDemo.jsp">Next</a><br/>
+<a href="DeclarationExample.jsp">Click here to Declaration tag</a><br/>
+<a href="inputImplicitObject.jsp">Click to learn JSP implicit response object Example</a><br/>
+<a href="sessionUI.jsp">Click to learn JSP implicit session object Example</a><br/>
+<a href="pageContextObject.jsp">Click to learn JSP implicit pageContext object Example</a><br/>
+<a href="pageDemo.jsp">Click to learn JSP implicit page object Example</a><br/>
+</body>
+</html>
